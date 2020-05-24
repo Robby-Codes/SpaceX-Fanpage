@@ -755,8 +755,20 @@
 }
 
 .footer-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   height: 100px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #000;
 }
 
@@ -1099,6 +1111,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  height: 0px;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -1118,7 +1131,74 @@
   font-size: 60px;
 }
 
+.progress-bar-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 100%;
+  padding-left: 0px;
+  border-radius: 100px;
+  background-color: #005288;
+  -webkit-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+.outter-progress-bar {
+  overflow: hidden;
+  width: 50%;
+  height: 25px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #a7a9ac;
+  border-radius: 100px;
+}
+
+.div-block-138 {
+  display: none;
+  width: 50%;
+}
+
+.heading-8 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  color: #005288;
+  font-size: 20px;
+}
+
+.div-block-139 {
+  width: 30%;
+}
+
+.text-block-10 {
+  margin-left: 10px;
+  font-size: 10px;
+}
+
 @media screen and (max-width: 991px) {
+  .spacex-home-section {
+    display: none;
+  }
   .intro-heading {
     font-size: 35px;
   }
@@ -1130,6 +1210,7 @@
     text-align: center;
   }
   .falcon-9 {
+    right: 38%;
     display: block;
     width: 200px;
   }
@@ -1144,22 +1225,58 @@
   }
   .falcon-heavy {
     top: 70%;
-    right: 35%;
+    right: 38%;
     display: block;
     width: 250px;
   }
   .starship {
     top: 130%;
-    right: 25%;
+    right: 35%;
     display: block;
     width: 300px;
   }
+  .m-gear-1 {
+    right: 20%;
+  }
+  .m-gear-4 {
+    left: 20%;
+  }
+  .m-gear-5 {
+    left: 45%;
+  }
+  .m-gear-6 {
+    left: 20%;
+  }
+  .ss-gear-2 {
+    left: 40%;
+  }
+  .ss-gear-4 {
+    right: 50px;
+  }
+  .ss-gear-5 {
+    right: 150px;
+  }
+  .ss-gear-v6 {
+    right: 45%;
+  }
+  .cover-page {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .gear-wrapper {
+    display: none;
+  }
   .cover-heading {
-    top: -89px;
+    top: -58px;
   }
 }
 
 @media screen and (max-width: 767px) {
+  .spacex-home-section {
+    display: none;
+  }
   .intro-heading {
     width: 80%;
     font-size: 30px;
@@ -1180,8 +1297,9 @@
     font-size: 15px;
   }
   .falcon-9 {
+    right: 38%;
     display: block;
-    width: 150px;
+    width: 200px;
   }
   .stages-info {
     font-size: 15px;
@@ -1223,20 +1341,53 @@
     font-size: 15px;
   }
   .falcon-heavy {
-    right: 32%;
+    right: 35%;
     display: block;
     width: 200px;
   }
   .starship {
-    right: 23%;
+    right: 30%;
     display: block;
     width: 250px;
+  }
+  .m-gear-1 {
+    right: 10%;
   }
   .m-gear-2 {
     width: 250px;
   }
+  .m-gear-4 {
+    left: 10%;
+  }
+  .m-gear-5 {
+    left: 35%;
+  }
+  .m-gear-6 {
+    left: 10%;
+  }
+  .ss-gear-1 {
+    top: 120%;
+  }
+  .ss-gear-2 {
+    top: 140%;
+  }
+  .ss-gear-4 {
+    right: 50px;
+  }
+  .ss-gear-v6 {
+    right: 35%;
+  }
+  .cover-page {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .gear-wrapper {
+    display: none;
+  }
   .cover-heading {
-    top: -81px;
+    top: -44px;
     font-size: 40px;
   }
   .text-block-8 {
@@ -1325,8 +1476,17 @@
   .ss-gear-v7 {
     width: 150px;
   }
+  .cover-page {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .cover-heading {
-    top: -59px;
+    top: -27px;
     font-size: 20px;
+  }
+  .outter-progress-bar {
+    height: 20px;
   }
 }
